@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/kioki/Documents/GitHub/Kotlin_DiceRoller/DiceRoller/app/src/main/res/drawable/empty_dice.xml" value="0.2135" />
         <entry key="..\:/Users/kioki/Documents/GitHub/Kotlin_DiceRoller/DiceRoller/app/src/main/res/layout/activity_main.xml" value="0.2619047619047619" />
       </map>
     </option>
