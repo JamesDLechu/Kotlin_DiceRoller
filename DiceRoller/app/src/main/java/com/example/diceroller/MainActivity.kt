@@ -3,6 +3,7 @@ package com.example.diceroller
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Gravity
+import android.widget.ImageView
 import android.widget.Toast
 import com.example.diceroller.databinding.ActivityMainBinding
 import kotlin.random.Random
@@ -10,6 +11,7 @@ import kotlin.random.Random
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
+    lateinit var diceImage: ImageView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -24,11 +26,10 @@ class MainActivity : AppCompatActivity() {
         rollButton.setOnClickListener {
             rollDice()
         }
+        diceImage= binding.diceImage
     }
 
     private fun rollDice() {
-        val diceImage= binding.diceImage
-
         val diceFace: Int = when (Random.nextInt(6) + 1) {
             1 -> R.drawable.dice_1
             2 -> R.drawable.dice_2
