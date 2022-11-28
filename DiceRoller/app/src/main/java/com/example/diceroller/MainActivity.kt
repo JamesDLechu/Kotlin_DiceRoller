@@ -4,14 +4,13 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Gravity
 import android.widget.ImageView
-import android.widget.Toast
 import com.example.diceroller.databinding.ActivityMainBinding
 import kotlin.random.Random
 
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
-    lateinit var diceImage: ImageView
+    private lateinit var diceImage: ImageView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -22,7 +21,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(root)
 
         val rollButton= binding.rollButton
-        rollButton.text= "Let's Roll!"
+        rollButton.text= getString(R.string.let_it_roll)
         rollButton.setOnClickListener {
             rollDice()
         }
